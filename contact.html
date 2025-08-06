@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rumesh Guest - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Rumesh Guest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Contact Us</h2>
+      <div class="row g-5">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <div class="card shadow border-0">
+            <div class="card-body">
+              <h4 class="mb-4">Send us a message</h4>
+              <form id="contactForm" action="#" method="post">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning px-4">Send</button>
+                <div id="formMessage" class="mt-3"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-6">
+          <div class="mb-4">
+            <h4 class="mb-3">Visit Us</h4>
+            <p>
+              <i class="bi bi-geo-alt-fill text-warning"></i> 123 Main Street, City, Country<br>
+              <i class="bi bi-telephone-fill text-warning"></i> +123 456 7890<br>
+              <i class="bi bi-envelope-fill text-warning"></i> info@rumeshguest.com
+            </p>
+          </div>
+          <div class="mb-4">
+            <h4 class="mb-3">Find Us on Map</h4>
+            <div class="ratio ratio-16x9 rounded shadow">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.411515474111!2d80.4806462!3d5.9378793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13f007b9cc0bb%3A0x30ffd77db47138d6!2sRS%20Restaurants!5e0!3m2!1sen!2slk!4v1754459399992!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div>
+            <h4 class="mb-3">Follow Us</h4>
+            <a href="#" class="text-warning fs-4 me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-warning fs-4 me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-warning fs-4"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <small>&copy; 2025 Rumesh Guest. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $('#contactForm').on('submit', function(e){
+      e.preventDefault();
+      $('#formMessage').html('<div class="alert alert-success">Thank you for contacting us! We will get back to you soon.</div>');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.hero {
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+.card {
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+
+.card-img-top.rounded-circle {
+  border: 4px solid #ffc107;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.card {
+  border-radius: 1rem;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card {
+  border-radius: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+h4 {
+  margin-top: 2rem;
+}
+
+#gallery img {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.card {
+  border-radius: 1rem;
+}
+.ratio iframe {
+  border-radius: 0.5rem;
+}
