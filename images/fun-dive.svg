@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#06b6d4" />
+  <g fill="#fff" font-family="Poppins, Inter, sans-serif" font-size="28">
+    <text x="40" y="60">Fun Dive</text>
+    <text x="40" y="120" font-size="18">Half-day guided dives — placeholder image</text>
+  </g>
+</svg>
